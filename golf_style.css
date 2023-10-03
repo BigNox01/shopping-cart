@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+.car_image{
+    display: flex;
+    justify-content: center;
+}
+.car_image img{
+    height: 1100px;
+    width: 1900px;
+}
+.available_colors{
+    line-height: 3;
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+}
+ul{
+    list-style: none;
+    text-align: center;
+}
+.Specs{
+    line-height: 2;
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+}
+.cart{
+    text-align: center;
+    margin: 5px 0px;
+}
+#title{
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: larger;
+    font-weight: bold;
+    margin: 5% 0;
+}
+.return_icon {
+    transform: rotate(180deg);
+    }

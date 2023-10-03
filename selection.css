@@ -1,0 +1,22 @@
+.Model{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+.selection{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+img{
+    height: 350px;
+    width: 350px;
+    margin: 7% 0;
+    border-radius: 5px;
+}
+.return_icon {
+transform: rotate(180deg);
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+main{
+    display: flex;
+    justify-content: space-evenly;
+}
+.aligned-header{
+    display: inline-block;
+    text-align: center;
+    margin-right: 50px;
+    font-family: 'Merriweather', serif;
+}
+.aligned-header:hover{
+    text-decoration: underline;
+    font-weight: bold;
+    color: chocolate;
+}
+.header-container{
+    width: 100%;
+}
+#return-icon{
+    transform: rotate(180deg);
+}
+.the_nav{
+display: flex;
+align-items: baseline;
+justify-content: space-around;
+}
+.purchase-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 3%;
+}
+.item-status{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+.item-status h4{
+    font-family: 'Merriweather', serif;
+}
+.quantity-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    border-radius: 5px;
+}

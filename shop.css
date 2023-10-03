@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&family=Raleway:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:wght@100&family=Roboto:wght@100;400&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Mooli', sans-serif;
+}
+#Brands_logo{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    max-width: 100%;
+}
+.the_brands_on_sale{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+.product_container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.the_brands_on_sale img{
+    height: 250px;
+    width: 250px;
+    box-sizing: border-box;
+    margin: 3%;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+nav h3:hover{
+    color: coral;
+    text-decoration-line: underline;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    line-height: 1.5;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
