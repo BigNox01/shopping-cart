@@ -4,3 +4,7 @@ function return_page() {
     window.location.href="volkswagen_selection.html"
 }
 retu.addEventListener("click",return_page)
+function cart_page() {
+    window.location.href="the_cart.html";
+}
+cart.addEventListener("click",cart_page);

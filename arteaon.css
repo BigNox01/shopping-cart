@@ -21,7 +21,7 @@ ul{
     font-family: 'Merriweather', serif;
     font-size: medium;
 }
-.cart{
+#cart_icon{
     text-align: center;
     margin: 5px 0px;
 }
