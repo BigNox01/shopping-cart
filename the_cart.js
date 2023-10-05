@@ -39,25 +39,51 @@ current_value[index];
 price.textContent=price[index];
 })
 // function to increment the variables
-function increment(index) {
+function increment(index,pricing) {
     current_value[index]++;
     outputNumbers[index].textContent=current_value[index];
-    car_price[index].textContent=(current_value[index]*36.455).toFixed(2);
+    car_price[index].textContent=(current_value[index]*pricing).toFixed(2);
 }
 // function to decrement
-function decrement(index) {
+function decrement(index,pricing) {
     current_value[index]--;
     outputNumbers[index].textContent=current_value[index];
-    car_price[index].textContent=(current_value[index]*36.455).toFixed(2);
+    car_price[index].textContent=(current_value[index]*pricing).toFixed(2);
 }
 // link the increment function to the buttons
+const car_image=document.querySelectorAll('.car-image')
 incrementButtons.forEach((button,index)=>{
-button.addEventListener('click',()=>increment(index))
+button.addEventListener('click',()=>{
+    let price;
+    // check the source of the image
+    const car_image=button.closest('.main-container').getAttribute('id');
+    // now for the commands of the pricing system based on car model
+    if (car_image==="Atlas") {
+    price=36.445;
+    } else if (car_image==="Golf") {
+    price=35.190;
+    } else {
+    price =50.175;
+    }
+    increment(index,price);
+})
 });
 //link the decrement function to the buttons
 decrementButtons.forEach((button,index)=>{
-button.addEventListener('click',()=>decrement(index));
-});
+    button.addEventListener('click',()=>{
+        // check the source of the image
+        const car_image=button.closest('.main-container').getAttribute('id');
+        let price;
+        // now for the commands of the pricing system based on car model
+        if (car_image==="Atlas") {
+        price=36.445;
+        } else if (car_image==="Golf") {
+        price=35.190;
+        } else {
+        price =50.175;
+        }
+        decrement(index,price)
+    })});
 
 // hide all the containers
 function hide() {

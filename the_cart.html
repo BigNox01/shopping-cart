@@ -28,10 +28,10 @@
         <div class="main-container" id="Atlas">
             <div class="purchase-container">
                 <div>
-                    <img src="atlas.jpg" height="350px" width="350px">
+                    <img  id="car-image" src="atlas.jpg" height="350px" width="350px">
                     <div class="item-status">
                         <h4>Atlas 2023</h4>
-                        <button type="button" class="btn btn-primary">Purchase</button>
+                        <button type="button" data-image="atlas" class="btn btn-primary">Purchase</button>
                     </div>
                     <div class="quantity-buttons">
                         <!--this is the plus button-->
@@ -70,14 +70,15 @@
         <div class="main-container" id="Golf">
             <div class="purchase-container">
                 <div>
-                    <img src="golf.jpg" height="350px" width="350px">
+                    <img  id="car-image" src="golf.jpg" height="350px" width="350px">
                     <div class="item-status">
                         <h4>Golf 2023</h4>
-                        <button type="button" class="btn btn-primary">Purchase</button>
+                        <button type="button"  class="btn btn-primary">Purchase</button>
                     </div>
                     <div class="quantity-buttons">
                         <!--this is the plus button-->
                         <lord-icon class="plus-button"
+                        data-image="golf"
                         src="https://cdn.lordicon.com/mecwbjnp.json"
                         trigger="hover"
                         colors="primary:#121331,secondary:#08a88a"
@@ -86,6 +87,7 @@
                         <span><p>Quantity: </p><span class="output-number">0</span></span>
                         <!-- this is the minus button-->
                         <lord-icon class="minus-button"
+                        data-image="golf"
                         src="https://cdn.lordicon.com/rivoakkk.json"
                         trigger="hover"
                         colors="primary:#121331,secondary:#08a88a"
@@ -112,7 +114,7 @@
 <div class="main-container" id="Arteon">
     <div class="purchase-container">
         <div>
-            <img src="arteon.jpg" height="350px" width="350px">
+            <img id="car-image" src="arteon.jpg" height="350px" width="350px">
             <div class="item-status">
                 <h4>Arteon 2023</h4>
                 <button type="button" class="btn btn-primary">Purchase</button>
